@@ -18,7 +18,7 @@ export function printHtml (dom) {
 
   if (IS_TEST) {
     // open a new window, for test
-    let newWindow = window.open('print window', '_blank')
+    const newWindow = window.open('print window', '_blank')
     newWindow.document.write(content)
     newWindow.document.close()
   } else {

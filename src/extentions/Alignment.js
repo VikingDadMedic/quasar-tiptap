@@ -18,7 +18,7 @@ export default class Alignment extends Extension {
         'left',
         'center',
         'right',
-        'justify',
+        'justify'
       ]
     }
   }

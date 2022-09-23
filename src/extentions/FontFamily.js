@@ -18,7 +18,7 @@ export default class FontFamily extends Mark {
         {
           style: 'font-family',
           getAttrs: value => ({ fontFamily: value })
-        },
+        }
       ],
       toDOM: mark => ['span', { style: `font-family: ${mark.attrs.fontFamily}` }, 0]
     }

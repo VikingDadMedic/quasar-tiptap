@@ -6,7 +6,7 @@ import {
   isCellSelection,
   findCellClosestToPos,
   findChildrenByAttr,
-  findChildrenByType,
+  findChildrenByType
 } from 'prosemirror-utils'
 import { nodeEqualsType } from 'tiptap-utils'
 
@@ -36,7 +36,7 @@ function dispatchTasks (tasks, textAlign, selectionIsCell, tr, dispatch, paragra
       ...node.attrs,
       textAlign: selectionIsCell
         ? textAlign
-        : null,
+        : null
     }
 
     transformation = transformation.setNodeMarkup(pos, node.type, attrs, node.marks)
@@ -53,7 +53,7 @@ export function setAlignment (type, attrs = {}) {
   return (state, dispatch) => {
     const {
       doc,
-      selection,
+      selection
     } = state
 
     if (!selection || !doc) {
@@ -67,7 +67,7 @@ export function setAlignment (type, attrs = {}) {
       list_item: listItem,
       todo_item: todoItem,
       table_cell: tableCell,
-      table_header: tableHeader,
+      table_header: tableHeader
     } = state.schema.nodes
     const { ranges } = selection
     let { tr } = state
@@ -92,8 +92,8 @@ export function setAlignment (type, attrs = {}) {
         node: {
           type: nType,
           attrs: nAttrs,
-          marks: nMarks,
-        },
+          marks: nMarks
+        }
       } = findParentNode(predicate)(selection)
 
       tr = tr.setNodeMarkup(pos, nType, { ...nAttrs, textAlign: alignment }, nMarks)
@@ -113,7 +113,7 @@ export function setAlignment (type, attrs = {}) {
       ranges.forEach(range => {
         const {
           $from: { parent: fromParent },
-          $to: { parent: toParent },
+          $to: { parent: toParent }
         } = range
 
         if (!fromParent.eq(toParent) ||
@@ -128,7 +128,7 @@ export function setAlignment (type, attrs = {}) {
           tasks.push({
             node: fromParent,
             pos: range.$from.pos,
-            cell: findCellClosestToPos(range.$from),
+            cell: findCellClosestToPos(range.$from)
           })
         }
 
@@ -142,7 +142,7 @@ export function setAlignment (type, attrs = {}) {
 
             tasks.push({
               node,
-              pos: range.$from.pos + pos,
+              pos: range.$from.pos + pos
             })
           })
       })
@@ -163,7 +163,7 @@ export function setAlignment (type, attrs = {}) {
 
       tasks.push({
         node,
-        pos,
+        pos
       })
 
       return nodeEqualsType({ node, types: [blockquote, listItem] })

@@ -80,7 +80,7 @@ export default {
       default: function () {
         return {}
       }
-    },
+    }
   },
   components: {
     OMenubarBtn,

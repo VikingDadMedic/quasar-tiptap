@@ -12,14 +12,14 @@ import { getMarkRange } from 'tiptap-utils'
 function getAttrs (dom) {
   return {
     href: dom.getAttribute('href'),
-    openInNewTab: dom.getAttribute('target') === '_blank',
+    openInNewTab: dom.getAttribute('target') === '_blank'
   }
 }
 
 function toDOM (node) {
   const {
     href,
-    openInNewTab,
+    openInNewTab
   } = node.attrs
 
   const attrs = {}
@@ -42,20 +42,20 @@ export default class Link extends TiptapLink {
     return {
       attrs: {
         href: {
-          default: null,
+          default: null
         },
         openInNewTab: {
-          default: true,
-        },
+          default: true
+        }
       },
       inclusive: false,
       parseDOM: [
         {
           tag: 'a[href]',
-          getAttrs,
-        },
+          getAttrs
+        }
       ],
-      toDOM,
+      toDOM
     }
   }
 
@@ -75,9 +75,9 @@ export default class Link extends TiptapLink {
             view.dispatch(transaction)
 
             return true
-          },
-        },
-      }),
+          }
+        }
+      })
     ]
   }
 }

@@ -20,7 +20,7 @@ const QuasarTiptapPlugin = {
     Vue.prototype.$quasarTiptapPlugin = this
 
     this.installed = true
-  },
+  }
 }
 
 export * from 'src/extentions/index'
@@ -28,5 +28,5 @@ export * from 'src/components/index'
 
 export {
   QuasarTiptapPlugin,
-  QuasarTiptap,
+  QuasarTiptap
 }

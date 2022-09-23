@@ -12,13 +12,13 @@ export const VideoServices = [
   { label: 'Youku', value: 'youku', icon: '', svgIcon: 'youku', color: 'blue' },
   // { label: 'iqiyi', value: 'iqiyi', icon: '', svgIcon: 'iqiyi', color: 'green' },
   { label: 'Bilibili', value: 'bilibili', icon: '', svgIcon: 'bilibili', color: 'blue' },
-  { label: 'QQ Video', value: 'qqvideo', icon: '', svgIcon: 'qqvideo', color: 'green' },
+  { label: 'QQ Video', value: 'qqvideo', icon: '', svgIcon: 'qqvideo', color: 'green' }
 ]
 
 export const MapServices = [
   { label: 'Google Map', value: 'google_map', icon: 'mdi-google-maps', color: 'blue' },
   { label: 'AMap', value: 'amap', svgIcon: 'amap' },
-  { label: 'Baidu Map', value: 'baidu_map', svgIcon: 'baidu-map' },
+  { label: 'Baidu Map', value: 'baidu_map', svgIcon: 'baidu-map' }
 ]
 
 export const DesignServices = [
@@ -26,20 +26,20 @@ export const DesignServices = [
   { label: 'Lanhu', value: 'lanhu', svgIcon: 'lanhu', color: 'blue' },
   { label: 'Figma', value: 'figma', svgIcon: 'figma' },
   { label: 'Canva', value: 'canva', svgIcon: 'canva' },
-  { label: 'ProcessOn', value: 'processon', svgIcon: 'processon' },
+  { label: 'ProcessOn', value: 'processon', svgIcon: 'processon' }
 ]
 
 export const DevelopServices = [
-  { label: 'CodePen', value: 'codepen', icon: 'mdi-codepen', color: 'purple' },
+  { label: 'CodePen', value: 'codepen', icon: 'mdi-codepen', color: 'purple' }
 ]
 
 export const DataServices = [
   { label: 'Google Forms', value: 'google_forms', svgIcon: 'google-forms', color: 'blue' },
-  { label: 'Jinshuju', value: 'jinshuju', svgIcon: 'jinshuju', color: 'blue' },
+  { label: 'Jinshuju', value: 'jinshuju', svgIcon: 'jinshuju', color: 'blue' }
 ]
 
 export const OtherServices = [
-  { label: 'IFrame', value: 'iframe', icon: 'mdi-iframe', color: 'blue' },
+  { label: 'IFrame', value: 'iframe', icon: 'mdi-iframe', color: 'blue' }
 ]
 
 export const AllEmbedServices = [
@@ -91,7 +91,7 @@ export const EmbedServiceLink = {
     srcPrefix: 'https://player.bilibili.com/player.html?bvid',
     linkRule: [
       'www.bilibili.com\\/video\\/\\w+'
-    ],
+    ]
   },
   qqvideo: {
     link: 'https://v.qq.com/x/cover/mzc0020006aw1mn/u0033nvzb5v.html',
@@ -99,7 +99,7 @@ export const EmbedServiceLink = {
     srcPrefix: 'https://v.qq.com/txp/iframe/player.html?vid',
     linkRule: [
       'v.qq.com\\/x\\/cover\\/\\w+\\/\\w+'
-    ],
+    ]
   },
   amap: {
     link: 'https://www.amap.com/place/B000A45467',
@@ -107,7 +107,7 @@ export const EmbedServiceLink = {
     srcPrefix: '',
     linkRule: [
       '\\.amap\\.com'
-    ],
+    ]
   },
   baidu_map: {
     link: 'https://j.map.baidu.com/15/fo',
@@ -115,7 +115,7 @@ export const EmbedServiceLink = {
     srcPrefix: '',
     linkRule: [
       'map\\.baidu\\.com'
-    ],
+    ]
   },
   google_map: {
     link: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.958958396003!2d116.5681862154775!3d40.43190767936344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f121d7687f2ccf%3A0xd040259b950522df!2sGreat%20Wall%20of%20China!5e0!3m2!1sen!2sus!4v1588227850952!5m2!1sen!2sus',
@@ -204,14 +204,14 @@ export const EmbedServiceLink = {
 }
 
 function getYoutubeSrc (originalLink, result) {
-  let link = EmbedServiceLink.youtube
-  let url = result.matchedUrl
+  const link = EmbedServiceLink.youtube
+  const url = result.matchedUrl
   result.validLink = true
 
-  let splits = url.split('=')
-  let len = splits.length
+  const splits = url.split('=')
+  const len = splits.length
   if (len > 0) {
-    let id = splits[len - 1]
+    const id = splits[len - 1]
     result.src = `${link.srcPrefix}/${id}`
     result.validId = true
   }
@@ -220,14 +220,14 @@ function getYoutubeSrc (originalLink, result) {
 }
 
 function getYoukuSrc (originalLink, result) {
-  let link = EmbedServiceLink.youku
-  let url = result.matchedUrl
+  const link = EmbedServiceLink.youku
+  const url = result.matchedUrl
 
-  let idRule = link.idRule
-  let regex = new RegExp(idRule)
-  let match = url.match(regex)
+  const idRule = link.idRule
+  const regex = new RegExp(idRule)
+  const match = url.match(regex)
   if (match && match.length > 0) {
-    let id = match[0].substr(3)
+    const id = match[0].substr(3)
 
     result.validId = true
     result.src = `${link.srcPrefix}/${id}`
@@ -239,13 +239,13 @@ function getYoukuSrc (originalLink, result) {
 }
 
 function getBilibiliSrc (originalLink, result) {
-  let link = EmbedServiceLink.bilibili
-  let url = result.matchedUrl
+  const link = EmbedServiceLink.bilibili
+  const url = result.matchedUrl
 
-  let splits = url.split('/')
-  let len = splits.length
+  const splits = url.split('/')
+  const len = splits.length
   if (len > 0) {
-    let id = splits[len - 1]
+    const id = splits[len - 1]
     result.src = `${link.srcPrefix}=${id}`
     result.validId = true
   }
@@ -254,13 +254,13 @@ function getBilibiliSrc (originalLink, result) {
 }
 
 function getQQVideoSrc (originalLink, result) {
-  let link = EmbedServiceLink.qqvideo
-  let url = result.matchedUrl
+  const link = EmbedServiceLink.qqvideo
+  const url = result.matchedUrl
 
-  let splits = url.split('/')
-  let len = splits.length
+  const splits = url.split('/')
+  const len = splits.length
   if (len > 0) {
-    let id = splits[len - 1]
+    const id = splits[len - 1]
     result.src = `${link.srcPrefix}=${id}`
     result.validId = true
   }
@@ -307,7 +307,7 @@ function getLanhuSrc (originalLink, result) {
 }
 
 function getFigmaSrc (originalLink, result) {
-  let link = EmbedServiceLink.figma
+  const link = EmbedServiceLink.figma
   result.src = `${link.srcPrefix}=${encodeURIComponent(result.matchedUrl)}`
   result.validId = true
   result.originalLink = result.matchedUrl
@@ -364,12 +364,12 @@ function getCommonSrc (originalLink, result) {
 }
 
 function getMatchedUrl (service, originalLink, result) {
-  let link = EmbedServiceLink[service]
-  let linkRule = link.linkRule
+  const link = EmbedServiceLink[service]
+  const linkRule = link.linkRule
 
   for (var rule of linkRule) {
-    let regex = new RegExp(rule)
-    let match = originalLink.match(regex)
+    const regex = new RegExp(rule)
+    const match = originalLink.match(regex)
     if (match && match.length > 0) {
       result.validLink = true
       result.matchedUrl = match[0]

@@ -24,17 +24,17 @@
 import Vue from 'vue'
 import { QuasarTiptapPlugin, OMenubarBtn } from 'src/index'
 import { DEFAULT_LOCALE } from 'src/i18n'
-Vue.use(QuasarTiptapPlugin, {
-  language: DEFAULT_LOCALE,
-  spellcheck: true
-})
 
 import {
-  Placeholder,
+  Placeholder
 } from 'tiptap-extensions'
 
 import { RecommendedExtensions } from 'src/extentions'
 import { FullFeaturedArticle } from 'src/data/article'
+Vue.use(QuasarTiptapPlugin, {
+  language: DEFAULT_LOCALE,
+  spellcheck: true
+})
 
 export default {
   name: 'page-quasar-tiptap-all',
@@ -54,7 +54,7 @@ export default {
               }
               return 'Content'
             }
-          }),
+          })
         ],
         toolbar: [
         ]
@@ -65,7 +65,7 @@ export default {
     }
   },
   components: {
-    OMenubarBtn,
+    OMenubarBtn
   },
   methods: {
     onUpdate ({ state, getJSON, getHTML }) {

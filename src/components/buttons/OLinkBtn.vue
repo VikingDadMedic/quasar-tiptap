@@ -45,7 +45,7 @@ export default {
       this.href = ''
       this.openInNewTab = true
 
-      let link = this.getMarkAttrs('link')
+      const link = this.getMarkAttrs('link')
       if (link && link.href) {
         this.href = link.href
         this.openInNewTab = link.openInNewTab

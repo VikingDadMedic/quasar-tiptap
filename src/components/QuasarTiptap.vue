@@ -49,14 +49,13 @@ import {
   Placeholder,
   Focus,
   HorizontalRule,
-  TrailingNode,
+  TrailingNode
   // Image
 } from 'tiptap-extensions'
 
 import java from 'highlight.js/lib/languages/java'
 import javascript from 'highlight.js/lib/languages/javascript'
 import css from 'highlight.js/lib/languages/css'
-require('src/statics/iconfont/iconfont')
 
 import {
   OTitle,
@@ -88,6 +87,7 @@ import OEditorMenuBar from 'src/components/menubars/OEditorMenuBar'
 import OEditorMenuBubble from 'src/components/menubars/OEditorMenuBubble'
 
 import { DefaultToolbar, DefaultBubble, TableToolbar } from 'src/data/editor'
+require('src/statics/iconfont/iconfont')
 
 export default {
   name: 'quasar-tiptap',
@@ -165,7 +165,7 @@ export default {
   components: {
     EditorContent,
     OEditorMenuBar,
-    OEditorMenuBubble,
+    OEditorMenuBubble
   },
   computed: {
     editorMenuBar () {
@@ -195,7 +195,7 @@ export default {
         new TrailingNode({
           node: 'paragraph',
           notAfter: ['paragraph']
-        }),
+        })
       ]
 
       this.editor = new Editor({
@@ -225,7 +225,7 @@ export default {
       })
     },
     generateExtensions () {
-      let extensions = []
+      const extensions = []
       for (let extension of this.extensions) {
         if (typeof extension === 'string') {
           if (!RecommendedExtensions.includes(extension)) {
@@ -274,7 +274,7 @@ export default {
     },
     // content
     getContent () {
-      let content = this.content || ''
+      const content = this.content || ''
       if (content && content.type) {
         return content // parsed json
       }

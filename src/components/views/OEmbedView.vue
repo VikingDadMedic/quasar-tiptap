@@ -91,7 +91,7 @@ export default {
   },
   methods: {
     onViewExample () {
-      let link = EmbedServiceLink[this.service.value]
+      const link = EmbedServiceLink[this.service.value]
       if (link) {
         this.originalLink = link.link
         this.link = link.link
@@ -99,7 +99,7 @@ export default {
       }
     },
     onConfirm () {
-      let result = getServiceSrc(this.service.value, this.originalLink)
+      const result = getServiceSrc(this.service.value, this.originalLink)
       if (!result.validLink || !result.validId) {
         this.$q.notify({
           color: 'red',
@@ -130,15 +130,15 @@ export default {
       this.src = updateQueryStringItem(this.src, 'autoplay', this.autoplay)
     },
     onDelete () {
-      let tr = this.view.state.tr
-      let pos = this.getPos()
+      const tr = this.view.state.tr
+      const pos = this.getPos()
       tr.delete(pos, pos + this.node.nodeSize)
       this.view.dispatch(tr)
     },
     onHelp () {
       let service = this.service.value || ''
       service = service.replace('_', '-')
-      let url = `https://github.com/donotebase/quasar-tiptap/wiki/Embed#${service}`
+      const url = `https://github.com/donotebase/quasar-tiptap/wiki/Embed#${service}`
 
       window.open(url, '_blank')
     },

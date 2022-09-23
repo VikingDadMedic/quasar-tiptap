@@ -12,7 +12,7 @@ export function resolveImg (src) {
       complete: false,
       width: 0,
       height: 0,
-      src,
+      src
     }
 
     if (!src) {

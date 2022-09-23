@@ -73,11 +73,11 @@ export function rgbToHex (rgb) {
     return rgb
   }
 
-  let splits = rgb.split(',')
-  let r = parseInt(splits[0].split('(')[1], 10)
-  let g = parseInt(splits[1], 10)
-  let b = parseInt(splits[2].split(')')[0], 10)
-  let hex = '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)
+  const splits = rgb.split(',')
+  const r = parseInt(splits[0].split('(')[1], 10)
+  const g = parseInt(splits[1], 10)
+  const b = parseInt(splits[2].split(')')[0], 10)
+  const hex = '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)
 
   return hex
 }
@@ -97,11 +97,11 @@ export function highlightColor (rgb) {
     return rgb
   }
 
-  let splits = rgb.split(',')
-  let r = parseInt(splits[0].split('(')[1], 10)
-  let g = parseInt(splits[1], 10)
-  let b = parseInt(splits[2].split(')')[0], 10)
-  let sum = r + g + b
+  const splits = rgb.split(',')
+  const r = parseInt(splits[0].split('(')[1], 10)
+  const g = parseInt(splits[1], 10)
+  const b = parseInt(splits[2].split(')')[0], 10)
+  const sum = r + g + b
   let color = '#000000'
   if (sum < 180 * 3) {
     color = '#ffffff'

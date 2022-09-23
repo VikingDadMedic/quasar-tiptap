@@ -23,15 +23,15 @@ export const BlockquoteNodeSpec = {
   ...ParagraphNodeSpec,
   attrs: {
     textAlign: { default: null },
-    indent: { default: null },
+    indent: { default: null }
   },
   content: 'block*',
   defining: true,
   parseDOM: [{
     tag: 'blockquote',
-    getAttrs,
+    getAttrs
   }],
-  toDOM,
+  toDOM
 }
 
 export default class Blockquote extends TiptapBlockquote {

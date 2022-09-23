@@ -8,7 +8,7 @@ export default {
     class: 'Class Diagram',
     state: 'State Diagram',
     gantt: 'Gantt Diagram',
-    tips: 'Generation of diagram and chart from text in a similar manner as markdown',
+    tips: 'Generation of diagram and chart from text in a similar manner as markdown'
   },
   editor: {
     add: 'Add',
@@ -72,7 +72,7 @@ export default {
     formula: 'Formula',
     inlineFormula: 'Inline',
     blockFormula: 'Block',
-    thirdPartyService: 'Third party services',
+    thirdPartyService: 'Third party services'
   },
   label: {
     cancel: 'Cancel',
@@ -87,7 +87,7 @@ export default {
     settings: 'Settings',
     remove: 'Remove',
     help: 'Help',
-    back: 'Back',
+    back: 'Back'
   },
   table: {
     insert: 'Insert Table',
@@ -98,7 +98,7 @@ export default {
     insertRowUp: 'Insert row up',
     insertRowDown: 'Insert row down',
     removeRows: 'Remove selected rows',
-    merge: 'Merge/Unmerge cells',
+    merge: 'Merge/Unmerge cells'
   },
   image: {
     preferences: 'Image Preferences',
@@ -109,7 +109,7 @@ export default {
     caption: 'Caption',
     link: 'Link',
     lockAspectRatio: 'Lock aspect ratio',
-    unlockAspectRatio: 'Unlock aspect ratio',
+    unlockAspectRatio: 'Unlock aspect ratio'
   },
   embed: {
     video: 'Video',
@@ -138,13 +138,13 @@ export default {
     jinshuju: 'Jinshuju',
     iframe: 'IFrame',
     linkTips: 'Link or embed code',
-    linkWarning: 'Invalid link',
+    linkWarning: 'Invalid link'
   },
   link: {
     back: 'Back to main menu',
     edit: 'Edit Link',
     off: 'Disable Link',
     open: 'Open Link',
-    open_in_new_tab: 'Open in new tab',
-  },
+    open_in_new_tab: 'Open in new tab'
+  }
 }

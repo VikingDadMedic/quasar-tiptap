@@ -10,7 +10,7 @@ const routes = [
       { path: 'examples/all', component: () => import('pages/examples/all.vue') },
       { path: 'tiptap/basic', component: () => import('pages/tiptap/basic/index.vue') },
       { path: 'tiptap/test1', component: () => import('pages/tiptap/basic/index.vue') },
-      { path: 'tiptap/test2', component: () => import('pages/tiptap/basic/index.vue') },
+      { path: 'tiptap/test2', component: () => import('pages/tiptap/basic/index.vue') }
     ]
   }
 ]

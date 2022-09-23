@@ -10,7 +10,7 @@ const ALLOWED_NODE_TYPES = [
   'paragraph',
   'heading',
   'list_item',
-  'todo_item',
+  'todo_item'
 ]
 
 export function setLineHeight (tr, lineHeight) {
@@ -33,7 +33,7 @@ export function setLineHeight (tr, lineHeight) {
         tasks.push({
           node,
           pos,
-          nodeType,
+          nodeType
         })
 
         return nodeType.name !== 'list_item' && nodeType.name !== 'todo_item'
@@ -51,7 +51,7 @@ export function setLineHeight (tr, lineHeight) {
     let { attrs } = node
     attrs = {
       ...attrs,
-      lineHeight,
+      lineHeight
     }
 
     tr = tr.setNodeMarkup(pos, nodeType, attrs, node.marks)

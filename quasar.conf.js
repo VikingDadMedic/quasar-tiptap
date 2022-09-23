@@ -94,7 +94,7 @@ module.exports = function (ctx) {
       scopeHoisting: true,
       vueRouterMode: 'history', // available values: 'hash', 'history'
       vueCompiler: true,
-      distDir: ctx.mode.spa ? 'public' : null,
+      distDir: 'dist/' + ctx.modeName,
       publicPath: 'quasar-tiptap',
       env: appenv,
 
@@ -108,14 +108,14 @@ module.exports = function (ctx) {
       // extractCSS: false,
 
       // https://quasar.dev/quasar-cli/cli-documentation/handling-webpack
-      extendWebpack (cfg) {
+      extendWebpack(cfg) {
         cfg.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
           exclude: /node_modules/,
           options: {
-            fix: true
+            formatter: require('eslint').CLIEngine.getFormatter('stylish')
           }
         })
       }
@@ -216,7 +216,7 @@ module.exports = function (ctx) {
       // More info: https://quasar.dev/quasar-cli/developing-electron-apps/node-integration
       nodeIntegration: true,
 
-      extendWebpack (cfg) {
+      extendWebpack(cfg) {
         // do something with Electron main process Webpack cfg
         // chainWebpack also available besides this extendWebpack
       }

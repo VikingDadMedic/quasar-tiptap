@@ -104,7 +104,7 @@ export default {
         width: 0,
         height: 0,
         originalWidth: 0,
-        originalHeight: 0,
+        originalHeight: 0
       },
       keepRatio: true,
       resizing: false,
@@ -113,10 +113,10 @@ export default {
         y: 0,
         w: 0,
         h: 0,
-        dir: '',
+        dir: ''
       },
       sizeRate: 1,
-      maxWidth: 0,
+      maxWidth: 0
     }
   },
   props: ['node', 'view', 'updateAttrs', 'getPos', 'selected'],
@@ -155,7 +155,7 @@ export default {
           width: refresh ? result.width : this.node.attrs.width || result.width,
           height: refresh ? result.height : this.node.attrs.height || result.height,
           originalWidth: result.width,
-          originalHeight: result.height,
+          originalHeight: result.height
         }
         if (refresh) {
           this.resize(null, null)
@@ -257,7 +257,7 @@ export default {
     resize (width, height) {
       this.updateAttrs({
         width: width,
-        height: height,
+        height: height
       })
     },
     onMouseUp (e) {
@@ -274,7 +274,7 @@ export default {
         y: 0,
         w: 0,
         h: 0,
-        direction: '',
+        direction: ''
       }
 
       this.offEvents()
@@ -305,7 +305,7 @@ export default {
         { label: '25%', value: 0.25 },
         { label: '50%', value: 0.5 },
         { label: '75%', value: 0.75 },
-        { label: '100%', value: 1 },
+        { label: '100%', value: 1 }
       ]
     },
     resizeDirections () {
@@ -313,7 +313,7 @@ export default {
         { label: '', value: 'tl' },
         { label: '', value: 'tr' },
         { label: '', value: 'bl' },
-        { label: '', value: 'br' },
+        { label: '', value: 'br' }
       ]
     }
   },

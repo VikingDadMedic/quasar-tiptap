@@ -18,7 +18,7 @@ const FORMAT_MARK_NAMES = [
   'foreColor',
   'backColor',
   'fontFamily',
-  'indent',
+  'indent'
 ]
 
 export function clearMarks (tr, schema, type) {
@@ -58,7 +58,7 @@ export function clearMarks (tr, schema, type) {
     tr = tr.removeMark(pos, pos + node.nodeSize, mark.type)
   })
 
-  // setAlignment(type, { textAlign: 'right' })
+  setAlignment(type, { textAlign: 'right' })
   tr = setLineHeight(tr, null)
   tr = cleanIndent(tr)
 

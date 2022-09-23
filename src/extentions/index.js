@@ -43,7 +43,7 @@ export const TipTapExtensions = [
   'TodoList',
   'HorizontalRule',
   'Table',
-  'Link',
+  'Link'
   // 'Image',
 ]
 

@@ -9,27 +9,27 @@ import { TodoItem as TiptapTodoItem } from 'tiptap-extensions'
 import OTodoItemView from 'src/components/views/OTodoItemView'
 
 function getAttrs (dom) {
-  let {
+  const {
     textAlign,
-    lineHeight,
+    lineHeight
   } = dom.style
 
-  let align = dom.getAttribute('data-text-align') || textAlign || ''
+  const align = dom.getAttribute('data-text-align') || textAlign || ''
 
   return {
     textAlign: align || null,
     lineHeight: lineHeight || null,
-    done: dom.getAttribute('data-done') === 'true',
+    done: dom.getAttribute('data-done') === 'true'
   }
 }
 
 function toDOM (node) {
   const {
     done,
-    textAlign,
+    textAlign
   } = node.attrs
 
-  let style = ''
+  const style = ''
   const attrs = {}
 
   attrs['data-type'] = 'todo_item'
@@ -45,7 +45,7 @@ function toDOM (node) {
     'li',
     attrs,
     ['span', { class: 'todo-checkbox', contenteditable: 'false' }],
-    ['div', { class: 'todo-content' }, 0],
+    ['div', { class: 'todo-content' }, 0]
   ]
 }
 
@@ -55,16 +55,16 @@ export default class TodoItem extends TiptapTodoItem {
       attrs: {
         done: { default: false },
         textAlign: { default: null },
-        lineHeight: { default: null },
+        lineHeight: { default: null }
       },
       draggable: true,
       content: this.options.nested ? '(paragraph|todo_list)+' : 'paragraph+',
       parseDOM: [{
         priority: 51,
         tag: `[data-type="${this.name}"]`,
-        getAttrs,
+        getAttrs
       }],
-      toDOM,
+      toDOM
     }
   }
 

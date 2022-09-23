@@ -43,7 +43,7 @@ export default {
       default: function () {
         return {}
       }
-    },
+    }
   },
   components: {
   },
@@ -65,14 +65,14 @@ export default {
         { label: this.$o.lang.editor.italic, value: 'italic', icon: 'format_italic', isActive: this.isActive.italic(), command: this.commands.italic },
         { label: this.$o.lang.editor.strikethrough, value: 'strike', icon: 'format_strikethrough', isActive: this.isActive.strike(), command: this.commands.strike },
         { label: this.$o.lang.editor.underline, value: 'underline', icon: 'format_underline', isActive: this.isActive.underline(), command: this.commands.underline },
-        { label: this.$o.lang.editor.code, value: 'code', icon: 'code', isActive: this.isActive.code(), command: this.commands.code },
+        { label: this.$o.lang.editor.code, value: 'code', icon: 'code', isActive: this.isActive.code(), command: this.commands.code }
       ]
     },
     customList () {
       if (this.opt && this.opt.list) {
-        let list = []
-        for (let name of this.opt.list) {
-          for (let item of this.list) {
+        const list = []
+        for (const name of this.opt.list) {
+          for (const item of this.list) {
             if (name === item.value) {
               list.push(item)
             }
@@ -85,7 +85,7 @@ export default {
       }
     },
     currentItem () {
-      for (let item of this.list) {
+      for (const item of this.list) {
         if (this.current === item.value) {
           return item
         }

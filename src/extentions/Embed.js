@@ -30,7 +30,7 @@ function toDOM (node) {
     height,
     service,
     link,
-    autoplay,
+    autoplay
   } = node.attrs
 
   const attrs = {}

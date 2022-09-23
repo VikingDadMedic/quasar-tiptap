@@ -42,7 +42,7 @@ export default {
   props: {
     embedServices: {
       type: Object
-    },
+    }
   },
   methods: {
     select (service) {
@@ -85,17 +85,17 @@ export default {
       ]
     },
     services () {
-      let services = []
-      let customServices = this.embedServices || DefaultEmbedServices
+      const services = []
+      const customServices = this.embedServices || DefaultEmbedServices
       for (var key in customServices) {
-        let group = {
+        const group = {
           value: key,
           children: []
         }
 
-        let list = customServices[key]
+        const list = customServices[key]
         for (var item of list) {
-          let service = getEmbedService(item)
+          const service = getEmbedService(item)
           if (service.value) {
             group.children.push(service)
           }

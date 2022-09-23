@@ -20,7 +20,7 @@ import {
   Placeholder,
   Focus,
   HorizontalRule,
-  TrailingNode,
+  TrailingNode
   // Image
 } from 'tiptap-extensions'
 
@@ -46,7 +46,7 @@ import {
   OImage,
   OEmbed,
   OInsertHtml,
-  OLink,
+  OLink
 } from 'src/extentions'
 
 const classes = {

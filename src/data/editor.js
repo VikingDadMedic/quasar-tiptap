@@ -19,7 +19,7 @@ export const CommandComponents = {
   table: 'o-table-btn',
   'link-off': 'o-link-off-btn',
   'link-open': 'o-link-open-btn',
-  'link-edit': 'o-link-edit-btn',
+  'link-edit': 'o-link-edit-btn'
 }
 
 export const DefaultToolbar = [
@@ -56,7 +56,7 @@ export const DefaultToolbar = [
   'undo',
   'redo',
   'separator',
-  'print',
+  'print'
 ]
 
 /**
@@ -80,7 +80,7 @@ export const TableToolbar = [
   'separator',
   'align-dropdown',
   'separator',
-  'table',
+  'table'
 ]
 
 /**
@@ -96,13 +96,13 @@ export const DefaultBubble = [
   'separator',
   'link',
   'separator',
-  'align-group',
+  'align-group'
 ]
 
 export const LinkBubble = [
   'link-open',
   'link-edit',
-  'link-off',
+  'link-off'
 ]
 
 export const DefaultEmbedServices = {

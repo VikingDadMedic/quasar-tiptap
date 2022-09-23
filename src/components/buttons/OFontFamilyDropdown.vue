@@ -38,7 +38,7 @@ export default {
         { label: 'Verdana', value: 'Verdana' },
         { label: 'Courier New', value: 'Courier New', separator: true },
         { label: 'Monaco', value: 'Monaco' },
-        { label: 'Monospace', value: 'monospace' },
+        { label: 'Monospace', value: 'monospace' }
       ]
     }
   },
@@ -52,7 +52,7 @@ export default {
   },
   methods: {
     isActive (value) {
-      let active = findActiveMarkAttribute(this.editor.state, 'fontFamily')
+      const active = findActiveMarkAttribute(this.editor.state, 'fontFamily')
       return value === active
     }
   },

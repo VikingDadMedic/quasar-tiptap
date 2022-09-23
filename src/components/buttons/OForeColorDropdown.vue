@@ -49,7 +49,7 @@ export default {
   },
   computed: {
     activeColor () {
-      let active = findActiveMarkAttribute(this.editor.state, 'foreColor')
+      const active = findActiveMarkAttribute(this.editor.state, 'foreColor')
       return active
     }
   }

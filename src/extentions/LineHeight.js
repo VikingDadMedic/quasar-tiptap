@@ -15,10 +15,10 @@ export default class LineHeight extends Extension {
 
   commands () {
     return attrs => (state, dispatch) => {
-      let { selection } = state
+      const { selection } = state
       const tr = setLineHeight(
         state.tr.setSelection(selection),
-        attrs.lineHeight,
+        attrs.lineHeight
       )
 
       if (tr.docChanged) {

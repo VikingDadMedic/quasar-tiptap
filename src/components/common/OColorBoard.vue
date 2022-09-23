@@ -55,7 +55,7 @@ export default {
           { label: 'color', rgb: 'rgb(233, 233, 233)', hex: '#e9e9e9' },
           { label: 'color', rgb: 'rgb(245, 245, 245)', hex: '#f5f5f5' },
           { label: 'color', rgb: 'rgb(250, 250, 250)', hex: '#fafafa', border: true },
-          { label: 'color', rgb: 'rgb(255, 255, 255)', hex: '#ffffff', border: true },
+          { label: 'color', rgb: 'rgb(255, 255, 255)', hex: '#ffffff', border: true }
         ],
         [
           { label: 'color', rgb: 'rgb(245, 34, 45)', hex: '#f5222d' },
@@ -67,7 +67,7 @@ export default {
           { label: 'color', rgb: 'rgb(24, 144, 255)', hex: '#1890ff' },
           { label: 'color', rgb: 'rgb(47, 84, 235)', hex: '#2f54eb' },
           { label: 'color', rgb: 'rgb(114, 46, 209)', hex: '#722ed1' },
-          { label: 'color', rgb: 'rgb(235, 47, 150)', hex: '#eb2f96' },
+          { label: 'color', rgb: 'rgb(235, 47, 150)', hex: '#eb2f96' }
         ],
         [
           { label: 'color', rgb: 'rgb(255, 232, 230)', hex: '#ffe8e6' },
@@ -79,7 +79,7 @@ export default {
           { label: 'color', rgb: 'rgb(212, 238, 252)', hex: '#d4eefc' },
           { label: 'color', rgb: 'rgb(222, 232, 252)', hex: '#dee8fc' },
           { label: 'color', rgb: 'rgb(239, 225, 250)', hex: '#efe1fa' },
-          { label: 'color', rgb: 'rgb(250, 225, 235)', hex: '#fae1eb' },
+          { label: 'color', rgb: 'rgb(250, 225, 235)', hex: '#fae1eb' }
         ],
         [
           { label: 'color', rgb: 'rgb(255, 163, 158)', hex: '#ffa39e' },
@@ -91,7 +91,7 @@ export default {
           { label: 'color', rgb: 'rgb(145, 213, 255)', hex: '#91d5ff' },
           { label: 'color', rgb: 'rgb(173, 198, 255)', hex: '#adc6ff' },
           { label: 'color', rgb: 'rgb(211, 173, 247)', hex: '#d3adf7' },
-          { label: 'color', rgb: 'rgb(255, 173, 210)', hex: '#ffadd2' },
+          { label: 'color', rgb: 'rgb(255, 173, 210)', hex: '#ffadd2' }
         ],
         [
           { label: 'color', rgb: 'rgb(255, 77, 79)', hex: '#ff4d4f' },
@@ -103,7 +103,7 @@ export default {
           { label: 'color', rgb: 'rgb(64, 169, 255)', hex: '#40a9ff' },
           { label: 'color', rgb: 'rgb(89, 126, 247)', hex: '#597ef7' },
           { label: 'color', rgb: 'rgb(146, 84, 222)', hex: '#9254de' },
-          { label: 'color', rgb: 'rgb(247, 89, 171)', hex: '#f759ab' },
+          { label: 'color', rgb: 'rgb(247, 89, 171)', hex: '#f759ab' }
         ],
         [
           { label: 'color', rgb: 'rgb(207, 19, 34)', hex: '#cf1322' },
@@ -115,7 +115,7 @@ export default {
           { label: 'color', rgb: 'rgb(9, 109, 217)', hex: '#096dd9' },
           { label: 'color', rgb: 'rgb(29, 57, 196)', hex: '#1d39c4' },
           { label: 'color', rgb: 'rgb(83, 29, 171)', hex: '#531dab' },
-          { label: 'color', rgb: 'rgb(196, 29, 127)', hex: '#c41d7f' },
+          { label: 'color', rgb: 'rgb(196, 29, 127)', hex: '#c41d7f' }
         ],
         [
           { label: 'color', rgb: 'rgb(130, 0, 20)', hex: '#820014' },
@@ -127,8 +127,8 @@ export default {
           { label: 'color', rgb: 'rgb(0, 58, 140)', hex: '#003a8c' },
           { label: 'color', rgb: 'rgb(6, 17, 120)', hex: '#061178' },
           { label: 'color', rgb: 'rgb(34, 7, 94)', hex: '#22075e' },
-          { label: 'color', rgb: 'rgb(120, 6, 80)', hex: '#780650' },
-        ],
+          { label: 'color', rgb: 'rgb(120, 6, 80)', hex: '#780650' }
+        ]
       ]
     }
   }

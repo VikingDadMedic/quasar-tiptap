@@ -6,7 +6,7 @@ export default {
     this.set = (language) => {
       language = language || this.getLocale()
 
-      let lang = getLang(language)
+      const lang = getLang(language)
       lang.set = this.set
       lang.getLocale = this.getLocale
 
@@ -25,7 +25,7 @@ export default {
     this.set(language)
   },
   getLocale () {
-    let val =
+    const val =
       navigator.language ||
       navigator.languages[0] ||
       navigator.browserLanguage ||

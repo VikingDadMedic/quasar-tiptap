@@ -28,7 +28,7 @@ export default {
   props: {
     commands: {
       type: Object
-    },
+    }
   },
   methods: {
     onHide () {

@@ -37,7 +37,7 @@ export default {
     },
     isActive: {
       type: Object
-    },
+    }
   },
   components: {
   },
@@ -54,11 +54,11 @@ export default {
     list () {
       return [
         { label: this.$o.lang.editor.indent, value: 'indent', icon: 'format_indent_increase', isActive: false, command: this.commands.indent },
-        { label: this.$o.lang.editor.outdent, value: 'outdent', icon: 'format_indent_decrease', isActive: false, command: this.commands.outdent },
+        { label: this.$o.lang.editor.outdent, value: 'outdent', icon: 'format_indent_decrease', isActive: false, command: this.commands.outdent }
       ]
     },
     currentItem () {
-      for (let item of this.list) {
+      for (const item of this.list) {
         if (this.current === item.value) {
           return item
         }

@@ -45,7 +45,7 @@ export default {
         { label: this.$o.lang.editor.heading2, value: 2 },
         { label: this.$o.lang.editor.heading3, value: 3 },
         { label: this.$o.lang.editor.heading4, value: 4 },
-        { label: this.$o.lang.editor.heading5, value: 5 },
+        { label: this.$o.lang.editor.heading5, value: 5 }
       ]
     }
   }

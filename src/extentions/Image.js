@@ -4,7 +4,7 @@ import OImageView from 'src/components/views/OImageView'
 function getAttrs (dom) {
   let {
     width,
-    height,
+    height
   } = dom.style
 
   width = width || dom.getAttribute('width') || null
@@ -15,7 +15,7 @@ function getAttrs (dom) {
     caption: dom.getAttribute('caption') || '',
     ref: dom.getAttribute('ref') || '',
     width: width == null ? null : parseInt(width, 10),
-    height: height == null ? null : parseInt(height, 10),
+    height: height == null ? null : parseInt(height, 10)
   }
 }
 
@@ -25,7 +25,7 @@ function toDOM (node) {
     caption,
     ref,
     width,
-    height,
+    height
   } = node.attrs
 
   const attrs = {
@@ -33,7 +33,7 @@ function toDOM (node) {
     caption,
     ref,
     width,
-    height,
+    height
   }
 
   return [
@@ -50,16 +50,16 @@ export default class Image extends TiptapImage {
         caption: { default: '' },
         ref: { default: '' },
         width: { default: null },
-        height: { default: null },
+        height: { default: null }
       },
       inline: 'true',
       group: 'inline',
       draggable: true,
       parseDOM: [{
         tag: 'img[src]',
-        getAttrs,
+        getAttrs
       }],
-      toDOM,
+      toDOM
     }
   }
 

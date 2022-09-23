@@ -8,9 +8,9 @@
 import { Paragraph as TiptapParagraph } from 'tiptap'
 
 function getAttrs (dom) {
-  let {
+  const {
     textAlign,
-    lineHeight,
+    lineHeight
   } = dom.style
 
   const align = dom.getAttribute('data-text-align') || textAlign || ''
@@ -19,7 +19,7 @@ function getAttrs (dom) {
   return {
     textAlign: align,
     indent,
-    lineHeight,
+    lineHeight
   }
 }
 
@@ -27,7 +27,7 @@ function toDOM (node) {
   const {
     textAlign,
     indent,
-    lineHeight,
+    lineHeight
   } = node.attrs
 
   const attrs = {}
@@ -51,15 +51,15 @@ export const ParagraphNodeSpec = {
   attrs: {
     textAlign: { default: null },
     indent: { default: null },
-    lineHeight: { default: null },
+    lineHeight: { default: null }
   },
   content: 'inline*',
   group: 'block',
   parseDOM: [{
     tag: 'p',
-    getAttrs,
+    getAttrs
   }],
-  toDOM,
+  toDOM
 }
 
 export default class Paragraph extends TiptapParagraph {

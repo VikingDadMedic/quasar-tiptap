@@ -37,7 +37,7 @@ export default {
     },
     isActive: {
       type: Object
-    },
+    }
   },
   components: {
   },
@@ -55,11 +55,11 @@ export default {
       return [
         { label: this.$o.lang.editor.unorderedList, value: 'bullet_list', icon: 'format_list_bulleted', isActive: this.isActive.bullet_list(), command: this.commands.bullet_list },
         { label: this.$o.lang.editor.orderedList, value: 'ordered_list', icon: 'format_list_numbered', isActive: this.isActive.ordered_list(), command: this.commands.ordered_list },
-        { label: this.$o.lang.editor.todoList, value: 'todo_list', icon: 'mdi-check-box-outline', isActive: this.isActive.todo_list(), command: this.commands.todo_list },
+        { label: this.$o.lang.editor.todoList, value: 'todo_list', icon: 'mdi-check-box-outline', isActive: this.isActive.todo_list(), command: this.commands.todo_list }
       ]
     },
     currentItem () {
-      for (let item of this.list) {
+      for (const item of this.list) {
         if (this.current === item.value) {
           return item
         }

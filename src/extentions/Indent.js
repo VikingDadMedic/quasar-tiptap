@@ -16,21 +16,21 @@ export default class Indent extends Extension {
   get defaultOptions () {
     return {
       minIndent: 0,
-      maxIndent: 7,
+      maxIndent: 7
     }
   }
 
   commands () {
     return {
       indent: () => createIndentCommand(1),
-      outdent: () => createIndentCommand(-1),
+      outdent: () => createIndentCommand(-1)
     }
   }
 
   keys ({ type, state, view }) {
     return {
       'Cmd-]': createIndentCommand(1),
-      'Cmd-[': createIndentCommand(-1),
+      'Cmd-[': createIndentCommand(-1)
     }
   }
 }

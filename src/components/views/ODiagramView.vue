@@ -201,13 +201,13 @@ export default {
       }
     },
     onDelete () {
-      let tr = this.view.state.tr
-      let pos = this.getPos()
+      const tr = this.view.state.tr
+      const pos = this.getPos()
       tr.delete(pos, pos + this.node.nodeSize)
       this.view.dispatch(tr)
     },
     onHelp () {
-      let url = 'https://mermaid-js.github.io/mermaid/#/examples'
+      const url = 'https://mermaid-js.github.io/mermaid/#/examples'
 
       window.open(url, '_blank')
     },

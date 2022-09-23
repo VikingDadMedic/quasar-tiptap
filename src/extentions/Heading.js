@@ -25,8 +25,8 @@ function getLevel (dom) {
   }
 
   // use tag
-  let tag = dom.tagName.toLowerCase()
-  for (let i of headingLevels) {
+  const tag = dom.tagName.toLowerCase()
+  for (const i of headingLevels) {
     if (tag === `h${i}`) {
       level = i
       break
@@ -66,7 +66,7 @@ export default class Heading extends Node {
 
   get defaultOptions () {
     return {
-      levels: headingLevels,
+      levels: headingLevels
     }
   }
 
@@ -76,7 +76,7 @@ export default class Heading extends Node {
       attrs: {
         ...ParagraphNodeSpec.attrs,
         level: {
-          default: 1,
+          default: 1
         },
         id: {
           default: ''
@@ -103,8 +103,8 @@ export default class Heading extends Node {
     return this.options.levels.reduce((items, level) => ({
       ...items,
       ...{
-        [`Shift-Ctrl-${level}`]: setBlockType(type, { level }),
-      },
+        [`Shift-Ctrl-${level}`]: setBlockType(type, { level })
+      }
     }), {})
   }
 
@@ -112,7 +112,7 @@ export default class Heading extends Node {
     return this.options.levels.map(level => textblockTypeInputRule(
       new RegExp(`^(#{1,${level}})\\s$`),
       type,
-      () => ({ level }),
+      () => ({ level })
     ))
   }
 }

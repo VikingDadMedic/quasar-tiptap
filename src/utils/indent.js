@@ -24,7 +24,7 @@ function setNodeIndentMarkup (tr, pos, delta) {
   const indent = clamp(
     (node.attrs.indent || 0) + delta,
     minIndent,
-    maxIndent,
+    maxIndent
   )
 
   if (indent === node.attrs.indent) {
@@ -33,7 +33,7 @@ function setNodeIndentMarkup (tr, pos, delta) {
 
   const nodeAttrs = {
     ...node.attrs,
-    indent,
+    indent
   }
 
   return tr.setNodeMarkup(pos, node.type, nodeAttrs, node.marks)
@@ -110,7 +110,7 @@ export function cleanIndent (tr) {
     ) {
       const nodeAttrs = {
         ...node.attrs,
-        indent: 0,
+        indent: 0
       }
       return tr.setNodeMarkup(pos, node.type, nodeAttrs, node.marks)
     } else if (isListNode(node)) {

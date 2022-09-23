@@ -8,7 +8,7 @@ export default {
     class: '类图',
     state: '状态图',
     gantt: '甘特图',
-    tips: '使用Markdown风格文本生成流程图、顺序图、类图、状态图和甘特图',
+    tips: '使用Markdown风格文本生成流程图、顺序图、类图、状态图和甘特图'
   },
   editor: {
     add: '添加',
@@ -72,7 +72,7 @@ export default {
     formula: '数学公式',
     inlineFormula: '行内公式',
     blockFormula: '块级公式',
-    thirdPartyService: '第三方服务',
+    thirdPartyService: '第三方服务'
   },
   label: {
     cancel: '取消',
@@ -87,7 +87,7 @@ export default {
     settings: '设置',
     remove: '删除',
     help: '帮助',
-    back: '返回',
+    back: '返回'
   },
   table: {
     insert: '插入表格',
@@ -98,7 +98,7 @@ export default {
     insertRowUp: '上方插入行',
     insertRowDown: '下方插入行',
     removeRows: '删除选中行',
-    merge: '合并/拆分 单元格',
+    merge: '合并/拆分 单元格'
   },
   image: {
     preferences: '图片设置',
@@ -109,7 +109,7 @@ export default {
     caption: '图片说明',
     link: '链接',
     lockAspectRatio: '锁定长宽比',
-    unlockAspectRatio: '解锁长宽比',
+    unlockAspectRatio: '解锁长宽比'
   },
   embed: {
     video: '视频',
@@ -138,13 +138,13 @@ export default {
     jinshuju: '金数据',
     iframe: 'IFrame',
     linkTips: '链接或代码',
-    linkWarning: '无效的链接',
+    linkWarning: '无效的链接'
   },
   link: {
     back: '返回主菜单',
     edit: '编辑链接',
     off: '取消链接',
     open: '打开链接',
-    open_in_new_tab: '在新标签页打开',
-  },
+    open_in_new_tab: '在新标签页打开'
+  }
 }

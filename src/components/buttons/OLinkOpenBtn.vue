@@ -27,11 +27,11 @@ export default {
     }
   },
   components: {
-    OMenubarBtn,
+    OMenubarBtn
   },
   methods: {
     onLinkOpen () {
-      let link = this.getMarkAttrs('link')
+      const link = this.getMarkAttrs('link')
       if (link && link.href) {
         openUrl(link.href)
       }

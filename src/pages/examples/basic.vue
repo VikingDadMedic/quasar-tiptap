@@ -24,7 +24,7 @@
 <script>
 import { QuasarTiptap } from 'src/index'
 import {
-  Placeholder,
+  Placeholder
 } from 'tiptap-extensions'
 
 import { RecommendedExtensions } from 'src/extentions'
@@ -89,7 +89,7 @@ export default {
               }
               return 'Content'
             }
-          }),
+          })
         ],
         tableToolbar: [
           'bold',
@@ -124,7 +124,7 @@ export default {
               list: [
                 'underline',
                 'strike',
-                'code',
+                'code'
               ]
             }
           },
@@ -149,7 +149,7 @@ export default {
           'photo',
           'table',
           'separator',
-          'print',
+          'print'
         ],
         bubble: [
           'bold',
@@ -161,7 +161,7 @@ export default {
           'separator',
           'link',
           'separator',
-          'align-group',
+          'align-group'
         ]
       },
       json: '',

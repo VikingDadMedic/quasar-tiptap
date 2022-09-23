@@ -8,7 +8,7 @@ export default {
     class: 'Schemat klas',
     state: 'Diagram stanu',
     gantt: 'Diagram Gantta',
-    tips: 'Generowanie diagramu i wykresu z tekstu w podobny sposób jak markdown',
+    tips: 'Generowanie diagramu i wykresu z tekstu w podobny sposób jak markdown'
   },
   editor: {
     add: 'Dodaj',
@@ -72,7 +72,7 @@ export default {
     formula: 'Formuła',
     inlineFormula: 'Formuła w treści',
     blockFormula: 'Blokowa formuła',
-    thirdPartyService: 'Third party services',
+    thirdPartyService: 'Third party services'
   },
   label: {
     cancel: 'Anuluj',
@@ -87,7 +87,7 @@ export default {
     settings: 'Settings',
     remove: 'Remove',
     help: 'Help',
-    back: 'Back',
+    back: 'Back'
   },
   table: {
     insert: 'Wstaw tabelę',
@@ -98,7 +98,7 @@ export default {
     insertRowUp: 'Wstaw wiersz powyżej',
     insertRowDown: 'Wstaw wiersz poniżej',
     removeRows: 'Usuń zaznaczone wiersze',
-    merge: 'Scal/podziel komórki',
+    merge: 'Scal/podziel komórki'
   },
   image: {
     preferences: 'Preferencje obrazu',
@@ -109,7 +109,7 @@ export default {
     caption: 'Nagłówek',
     link: 'Łącze',
     lockAspectRatio: 'Lock aspect ratio',
-    unlockAspectRatio: 'Unlock aspect ratio',
+    unlockAspectRatio: 'Unlock aspect ratio'
   },
   embed: {
     video: 'Video',
@@ -138,13 +138,13 @@ export default {
     jinshuju: 'Jinshuju',
     iframe: 'IFrame',
     linkTips: 'Link or embed code',
-    linkWarning: 'Invalid link',
+    linkWarning: 'Invalid link'
   },
   link: {
     back: 'Back to main menu',
     edit: 'Edit Link',
     off: 'Disable Link',
     open: 'Open Link',
-    open_in_new_tab: 'Open in new tab',
-  },
+    open_in_new_tab: 'Open in new tab'
+  }
 }

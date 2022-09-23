@@ -46,7 +46,7 @@ export default {
         { label: this.$o.lang.editor.left, value: 'left', command: this.commands.alignment },
         { label: this.$o.lang.editor.center, value: 'center', command: this.commands.alignment },
         { label: this.$o.lang.editor.right, value: 'right', command: this.commands.alignment },
-        { label: this.$o.lang.editor.justify, value: 'justify', command: this.commands.alignment },
+        { label: this.$o.lang.editor.justify, value: 'justify', command: this.commands.alignment }
       ]
     }
   }
