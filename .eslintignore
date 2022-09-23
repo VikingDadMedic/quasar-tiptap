@@ -1,3 +1,4 @@
 /dist
 /src/css/katex
 /src/statics
+/quasar.conf.js
