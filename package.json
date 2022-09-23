@@ -8,7 +8,9 @@
     "test": "echo \"No test specified\" && exit 0",
     "build": "rollup -c --environment BUILD:production",
     "audit-ci": "audit-ci --critical",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "build": "quasar build",
+    "deploy": "vercel"
   },
   "main": "lib/quasar-tiptap.common.js",
   "module": "lib/quasar-tiptap.esm.js",
