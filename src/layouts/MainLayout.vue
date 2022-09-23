@@ -65,85 +65,85 @@
 </template>
 
 <script>
-import { version } from "../../package";
-import { openURL } from "quasar";
+import { version } from '../../package'
+import { openURL } from 'quasar'
 
 export default {
-  name: "MainLayout",
+  name: 'MainLayout',
   components: {},
-  data() {
+  data () {
     return {
       leftDrawerOpen: false,
       miniState: false,
       version: version,
       links: [
         {
-          label: "Examples",
-          icon: "apps",
+          label: 'Examples',
+          icon: 'apps',
           group: true,
           children: [
             {
-              label: "Basic",
-              caption: "Basic extensions",
-              icon: "mdi-pencil",
-              type: "route",
-              to: "/examples/basic",
-              groupLabel: "examples"
+              label: 'Basic',
+              caption: 'Basic extensions',
+              icon: 'mdi-pencil',
+              type: 'route',
+              to: '/examples/basic',
+              groupLabel: 'examples'
             },
             {
-              label: "Readonly",
-              caption: "readonly",
-              icon: "mdi-eye",
-              type: "route",
-              to: "/examples/readonly"
+              label: 'Readonly',
+              caption: 'readonly',
+              icon: 'mdi-eye',
+              type: 'route',
+              to: '/examples/readonly'
             },
             {
-              label: "Full Featured",
-              caption: "All extensions",
-              icon: "mdi-text-box",
-              type: "route",
-              to: "/examples/all"
+              label: 'Full Featured',
+              caption: 'All extensions',
+              icon: 'mdi-text-box',
+              type: 'route',
+              to: '/examples/all'
             }
           ]
         },
         {
-          label: "Usages",
-          icon: "book",
+          label: 'Usages',
+          icon: 'book',
           group: false,
           children: [
             {
-              label: "Basic",
-              caption: "Basic extensions",
-              icon: "mdi-pencil",
-              type: "route",
-              to: "/examples/basic",
-              groupLabel: "examples"
+              label: 'Basic',
+              caption: 'Basic extensions',
+              icon: 'mdi-pencil',
+              type: 'route',
+              to: '/examples/basic',
+              groupLabel: 'examples'
             },
             {
-              label: "Readonly",
-              caption: "readonly",
-              icon: "mdi-eye",
-              type: "route",
-              to: "/examples/readonly"
+              label: 'Readonly',
+              caption: 'readonly',
+              icon: 'mdi-eye',
+              type: 'route',
+              to: '/examples/readonly'
             },
             {
-              label: "Full Featured",
-              caption: "All extensions",
-              icon: "mdi-text-box",
-              type: "route",
-              to: "/examples/all"
+              label: 'Full Featured',
+              caption: 'All extensions',
+              icon: 'mdi-text-box',
+              type: 'route',
+              to: '/examples/all'
             }
           ]
         }
       ]
-    };
+    }
   },
   methods: {
-    gotoRepo() {
-      openURL("https://github.com/donotebase/quasar-tiptap");
+    gotoRepo () {
+      openURL('https://github.com/donotebase/quasar-tiptap')
     }
   }
-};
+}
 </script>
 
 <style lang="stylus">

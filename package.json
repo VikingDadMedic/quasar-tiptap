@@ -6,7 +6,6 @@
   "scripts": {
     "lint": "eslint --ext .js,.vue src",
     "test": "echo \"No test specified\" && exit 0",
-    "build": "rollup -c --environment BUILD:production",
     "audit-ci": "audit-ci --critical",
     "semantic-release": "semantic-release",
     "build": "quasar build",

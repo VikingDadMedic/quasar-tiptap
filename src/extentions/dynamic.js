@@ -99,7 +99,7 @@ const classes = {
 }
 
 class DynamicClass {
-  constructor(className, opts) {
+  constructor (className, opts) {
     return new classes[className](opts)
   }
 }

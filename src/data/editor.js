@@ -1,5 +1,4 @@
 
-
 /**
  * Command component except for simple commands
  */
