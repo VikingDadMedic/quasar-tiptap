@@ -94,7 +94,7 @@ module.exports = function (ctx) {
       scopeHoisting: true,
       vueRouterMode: 'history', // available values: 'hash', 'history'
       vueCompiler: true,
-      distDir: 'dist/' + ctx.modeName,
+      distDir: ctx.mode.spa ? 'public' : null,
       publicPath: 'quasar-tiptap',
       env: appenv,
 
