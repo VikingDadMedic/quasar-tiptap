@@ -1,15 +1,4 @@
-/**
- * Quasar Tiptap Extensions
- *
- * @author Micle Bu, micle@oriovo.com
- * @version 1.0
- * @date 2020.04.11
- */
 
-// --------------------------------------------------------------------------------
-// Extensions
-// --------------------------------------------------------------------------------
-// Nodes
 export { default as OTitle } from 'src/extentions/Title'
 export { default as ODoc } from 'src/extentions/Doc'
 export { default as OParagraph } from 'src/extentions/Paragraph'

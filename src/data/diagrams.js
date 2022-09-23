@@ -1,11 +1,3 @@
-/**
- * Data: Diagram
- *
- * @author Micle Bu, micle@oriovo.com
- * @version 1.0
- * @date 2020.03.03
- */
-
 export const MermaidTemplates = {
   flow: `graph TD
 A[Christmas] -->|Get money| B(Go shopping)

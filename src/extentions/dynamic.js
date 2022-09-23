@@ -1,10 +1,3 @@
-/**
- * Quasar Tiptap Extensions
- *
- * @author Micle Bu, micle@oriovo.com
- * @version 1.0
- * @date 2020.04.14
- */
 import {
   BulletList,
   CodeBlock,
@@ -106,7 +99,7 @@ const classes = {
 }
 
 class DynamicClass {
-  constructor (className, opts) {
+  constructor(className, opts) {
     return new classes[className](opts)
   }
 }
